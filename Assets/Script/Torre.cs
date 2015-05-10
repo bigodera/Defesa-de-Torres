@@ -22,7 +22,7 @@ public class Torre : MonoBehaviour {
 			momentoDoUltimoDisparo = tempoAtual;
 			GameObject pontoDeDisparo = this.transform.Find ("CanhaoDaTorre/PontoDeDisparo").gameObject;
 			Vector3 posicaoDoPontoDeDisparo = pontoDeDisparo.transform.position;
-			Instantiate (projetilPrefab, posicaoDoPontoDeDisparo, Quaternion.identity);
+			Instantiate (projetilPrefab, posicaoDoPontoDeDisparo, transform.rotation);
 		}
 	}
 
