@@ -13,7 +13,15 @@ public class Inimigo : MonoBehaviour {
 		Vector3 posicaoDoFimDoCaminho = fimDoCaminho.transform.position;
 		agente.SetDestination ( posicaoDoFimDoCaminho );
 	}
-	
+
+	public void RecebeDano(int pontosDeDano)
+	{
+		vida -= pontosDeDano;
+		if (vida <= 0) {
+			Destroy(this.gameObject);
+		}
+	}
+
 	// Update is called once per frame
 	void Update () {
 	

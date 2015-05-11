@@ -54,7 +54,7 @@ public class Missil : MonoBehaviour {
 	    {
 			Destroy (this.gameObject);
 			Inimigo inimigo = elementoColidido.GetComponent<Inimigo>();
-			inimigo.RecebeDano();
+			inimigo.RecebeDano(pontosDeDano);
 		}
 	}
 

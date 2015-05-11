@@ -1,14 +1,16 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\Inimigo.cs">
     <Files>
-      <File FileName="Assets\Missil.cs" Line="12" Column="1" />
+      <File FileName="Assets\Missil.cs" Line="62" Column="2" />
       <File FileName="Assets\Script\Torre.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\Inimigo.cs" Line="8" Column="2" />
+      <File FileName="Assets\Script\Inimigo.cs" Line="21" Column="29" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Gabriel\git\Defesa de Torres\Assets\Script\Inimigo.cs" line="19" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
