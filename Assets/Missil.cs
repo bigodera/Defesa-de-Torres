@@ -9,12 +9,17 @@ public class Missil : MonoBehaviour {
 	[SerializeField]
 	private int pontosDeDano;
 	
-	private GameObject alvo;
+	private Inimigo alvo;
 
 	// Use this for initialization
 	void Start () {
-		alvo = GameObject.Find ("Inimigo");	
+
 		AutoDestroiDepoisDeSegundos (10);
+	}
+
+	public void DefineAlvo(Inimigo inimigo)
+	{
+		alvo = inimigo;
 	}
 
 	private void AutoDestroiDepoisDeSegundos(float segundos)
