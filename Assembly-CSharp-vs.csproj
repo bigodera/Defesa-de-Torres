@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\GeradorDeInimigos.cs" />
      <Compile Include="Assets\Missil.cs" />
+     <Compile Include="Assets\Scripts\DetectorDeCruzamento.cs" />
      <Compile Include="Assets\Scripts\Inimigo.cs" />
      <Compile Include="Assets\Scripts\Jogador.cs" />
      <Compile Include="Assets\Scripts\Jogo.cs" />

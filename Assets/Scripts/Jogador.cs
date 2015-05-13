@@ -19,4 +19,9 @@ public class Jogador : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	public void PerdeVida()
+	{
+		vida--;
+	}
 }
