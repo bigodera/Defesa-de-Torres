@@ -6,16 +6,31 @@ public class Jogo : MonoBehaviour {
 	[SerializeField]
 	private GameObject torrePrefab;
 
+	[SerializeField]
+	private GameObject gameOver;
+
+	[SerializeField]
+	private Jogador jogador;
+
 	// Use this for initialization
 	void Start () {
-	
+		gameOver.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (ClicouComOBotaoPrimario ()) {
-			ConstroiTorre();
+		if (JogoAcabou ()) {
+			gameOver.SetActive (true);
+		} else {
+			if (ClicouComOBotaoPrimario ()) {
+				ConstroiTorre ();
+			}
 		}
+	}
+
+	private bool JogoAcabou() 
+	{
+		return !jogador.EstaVivo ();
 	}
 
 	private void ConstroiTorre()
